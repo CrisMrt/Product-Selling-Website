@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titulo</title>
+    <link rel="stylesheet" href="admin-style.css"  />
+</head>
+<body>
+    <header>
+        <div class="top">
+            <nav class = "container">
+                <div class="logo">
+                   Admin
+                </div>
+                <div class="menu">
+    <ul>
+        <li><a href="index.php">Produtos</a></li>
+        <li><a href="../index.php">Loja</a></li>
+        <li class="user">
+        António |<a href='logout.php' class='login'>logout</a>       
+      </ul>
+</div>          </nav>
+        </div>
+        
+    </header>
+  
+
+<div class="container">
+    <main role="main">
+        <div class="formproduto">
+            <h1>Inserir um novo Produto</h1>
+            <form method="post" enctype="multipart/form-data" action="admin-processaInserirproduto.php">
+                
+                <div class="form-group">
+                    <label class="control-label" for="nome">Nome produto</label><br>
+                    <input class="form-control" type="text" id="nome" name="nome" value="" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="descricao">Descrição do produto</label><br>
+                    <input class="form-control" type="text" id="descricao" name="descricao" value="" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="fileName">Foto do produto</label><br>
+                    <input type="file" class="form-control" required id="fileName" name="fileName" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="price">Preço</label><br>
+                    <input class="form-control" type="text" data-val="true" id="price" name="price" value="" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="idcategoria">Categoria</label><br>
+                    <select class="form-control" data-val="true" data-val-required="The Categoria field is required." id="idcategoria" name="idcategoria">
+                        <option value="7">brinquedos</option>
+                        <option value="5">casas</option>
+                        <option value="6">jogadores</option>
+                        <option value="4">Outros</option>
+                        <option value="1">Paineis</option>
+                        <option value="3">patins</option>
+                        <option value="2">Porta-Chaves</option>
+                     </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Inserir Produto" />
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+<script src="scripts/scripts.js"></script>
+<footer>
+       <p>Escola Gago Coutinho 2024</p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>         

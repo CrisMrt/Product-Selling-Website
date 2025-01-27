@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titulo</title>
+    <link rel="stylesheet" href="style.css"  />
+</head>
+<body>
+    <header>
+        <div class="top">
+            <nav class = "container">
+                <div class="logo">
+                    <a href="index.php">Logo</a>
+                </div>
+                
+
+<div class="menu">
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="produtos.php">Produtos</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li class="user">
+        <a href='login.php'>login</a>       </li>
+      
+        <li class="imagemcarrinho">
+            <a href="carrinho.php"><img src="images/shopping-cart.png"/></a>
+        </li> 
+       
+    </ul>
+</div>          </nav>
+        </div>
+        
+    </header>
+    <section class="hero">
+        <h1 class="titulo">
+            A minha Loja
+        </h1>
+        <h2>
+           Macramé
+        </h2>
+    </section>
+25<div class="container">
+        <main role="main">
+        <h1>Carrinho de compras</h1>
+        <p><p>
+    <section class="carrinho" >
+        
+        <div class="esquerda">
+            <div class="carrinho_grelha">
+                <div class="carrinho_colunas">
+                    <div class="titulo_coluna">Produto</div>
+                    <div class="titulo_coluna">Preço</div>
+                    <div class="titulo_coluna">Quantidade</div>
+                    <div class="titulo_coluna"></div>
+                    <div class="titulo_coluna">Total</div>
+                    
+                </div>
+                <!-- Listagem de itens do carrinho ----   -->
+                                    
+                        <div class="linha_dados" id="produto25">
+                            <div class="linha_foto">
+                                <div class="foto">
+                                    <img src="images/joaoCosta.png" />
+                                </div>
+                                <div>
+                                    <p class="nome_produto"> teste</p>
+                                    <!--<p class="tamanho">M</p>-->
+                                </div>
+                            </div>
+                            <div class="preco"> 1</div>
+                            <div
+                            class="quantidade center">
+                                <div onclick="Adiciona(-1, 25, -1);" class="btmenos">-</div>
+                                <div id="25">1</div>
+                                <div onclick="Adiciona(1, 25, 1);" class="btmais">+</div>
+                            </div>
+                            <div class="apagar"><img src="images/delete.png" onclick="RemoveProduto(25)"/></div>
+                             <div class="total" id="itemsubtotal25">1</div>
+                        </div>
+                        
+            </div>
+        </div>
+        <div class="direita">
+            <div class="quadro_sumario">
+                <h2>Sumário</h2>
+                <div class="subtotal">
+                    <h3>Subtotal</h3>
+                    <h4><strong id="subtotal">1</strong></h4>
+                </div>
+                <div class="portes">
+                    <h3>Portes</h3>
+                    <h4>0€</h4>
+                </div>
+                <div class="total">
+                    <h3><strong>Total</strong></h3>
+                    <h4><strong id="total">1</strong></h4>
+                </div>
+            
+            
+            </div>
+           
+            <form action="checkout.php" method="post" id="carrinhoForm" name="carrinho_form">
+                                        <input type="hidden" name="itens[0][id]" value="25" />
+                        <input type="hidden" name="itens[0][quantidade]" value="1" />
+                                        <button type="submit" class="checkout">
+                    checkout
+                </button>
+            </form>
+
+            
+        </div>
+        
+    </section>
+        </main>
+    </div>
+<footer>
+       <p>Escola Gago Coutinho 2024</p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html> 
+

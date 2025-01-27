@@ -1,0 +1,632 @@
+/*- -----------------      fontes -----------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&family=Julius+Sans+One&family=Roboto:wght@300;400;500;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+/*--------------------------------   Menu Top -----------*/
+nav {
+   
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #2E2E2E;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    height: 60px;
+    padding: 0 20pt 0 20pt;
+}
+
+.top{
+    background-color: #2E2E2E;
+    width:100%;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 14pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu{
+  padding-top: 4pt;
+  font-size: 10pt;
+  
+
+  
+}
+
+.menu ul{
+    justify-content:end;
+    text-align: end;
+  
+}
+
+.menu li{
+    display: inline;
+    padding:10pt;
+    padding-top: 10pt;
+}
+
+li.user {
+    margin-left: 20pt;
+}
+
+.menu li a, nav .logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu li.user a{
+    color: #91E525;
+    text-decoration: none;
+}
+
+.menu li a:hover, nav .logo a:hover {
+    color: #91E525;
+    text-decoration: underline;
+}
+
+.menu li.user a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* ----------------  produtos ----------------------*/
+
+.produtos h1{
+    text-transform: uppercase;
+    font-size: 16pt;
+    margin-bottom: 20pt;
+}
+
+
+.produtos{
+    padding-top: 20pt;
+}
+
+.grelhaprodutos {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 30pt;
+    row-gap: 30pt;
+    width: 100%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+}
+
+.cartaoproduto{
+    box-shadow: 4px 4px 10px #2E2E2E30;
+    padding:10pt;
+    border-radius:10pt
+}
+
+
+.imagemproduto img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.imagemproduto{
+    display:flex;
+    justify-content:center;
+}
+
+.infoproduto {
+    display: flex;
+    justify-content: space-between;
+    padding: 6pt;
+    padding-top: 10pt;
+}
+
+.cartaoproduto p {
+    font-size: 10pt;
+    color: #B7B7B7;
+    margin-bottom:20pt;
+}
+
+.vermais, .bt_ok {
+    width: 95%;
+    text-align: center;
+    background: none;
+    padding: 6pt;
+    border: solid 1pt rgba(128, 128, 128, 0.664);
+    border-radius: 6pt;
+    color: #84CE26;
+}
+
+.vermais:hover {
+    background: #84CE26;
+    border: none;
+    color: #FFFFFF;
+}
+
+.cartaoproduto a {
+    text-decoration: none;
+}
+
+.categorias{
+    padding-bottom: 20pt;
+}
+
+.categorias h2 {
+    text-transform: uppercase;
+    font-size: 16pt;
+    margin-bottom: 20pt;
+}
+
+.categorias li{
+    display: inline;
+    margin-right: 10pt;
+}
+
+.categorias li a {
+    text-decoration: none;
+    color: #5f0b0b;
+}
+
+
+.categorias li a:hover{
+    color: #84CE26;
+}
+
+.categorias ul{
+    display: flex;
+    justify-content:flex-start;
+  
+
+}
+
+footer {
+    height: 80pt;
+    background-color: #2E2E2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #808080;
+    font-size:9pt;
+    text-align:center;
+}
+
+input[type=submit]{
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+}
+
+
+/*---------------------  Detalhe de produto -------------------------------*/
+
+.detalhe_produto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top:20pt;
+    column-gap:20pt;
+    padding-bottom: 30pt;
+
+}
+
+.detalhe_imagem img{
+    width: 100%;
+    max-width: 60px;
+
+}
+
+.detalhe_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.detalhe_info button {
+    width: 30%;
+    text-align: center;
+    background: none;
+    padding: 6pt;
+    border: solid 1pt rgba(128, 128, 128, 0.664);
+    border-radius: 6pt;
+    color: #84CE26;
+    cursor: pointer;
+    margin-right: 30pt;
+    
+ }
+
+.detalhe_info button:hover{
+    background: #84CE26;
+    border: none;
+    color: #FFFFFF;
+ }
+
+
+.detalhe_action{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.detalhe_nome {
+    margin-top: 20pt;
+    font-size: 16pt;
+    color: #464646;
+}
+
+
+
+
+
+
+/**************   Form Login ************/
+
+.formlogin{
+    height: 300pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro-login{
+    display: flex;
+    width: 20%;
+    border: none;
+    border-radius: 6pt;
+    display: flex;
+    flex-direction: column;
+    padding: 20pt;
+    background-color: #dddddd;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadro-login input{
+    width: 100%;
+    padding: 4pt;
+    border-radius: 5pt;
+    border: none;
+    font-size: 12pt;
+    margin-top: 6pt;
+    margin-bottom: 20pt;
+}
+
+.quadro-login button{
+    padding: 6pt;
+    border-radius: 5pt;
+    background-color: #84CE26;
+    color: white;
+    font-size: 12pt;
+    width: 80%;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.quadro-login button:hover{
+    background-color: #ce6926;
+    transition: all 0.5s;
+}
+
+.quadro-login .center{
+    display: flex;
+    justify-content:center;
+}
+
+a.login{
+    margin-left: 10pt;
+    font-size: 8pt;
+}
+
+
+
+/* -------------------  Listagem produtos --- ADMIN  ------------ */
+
+
+.novo-produto{
+ padding-top: 60pt;
+}
+
+.btnovo{
+    width: fit-content;
+    padding: 6pt 10pt 6pt 10pt;
+    border-radius: 6pt;
+    background-color: rgb(28, 185, 190);
+    color: white;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+}
+
+.btnovo:hover{
+    background-color: rgb(5, 120, 124);
+}
+
+.pesquisa{
+    padding-top: 30pt;
+   
+}
+
+
+.grelha-pesquisa{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20pt;
+    justify-content: center;
+    padding-left: 10pt;
+}
+
+.caixa-pesquisa, .caixa-filtro{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+.caixa-pesquisa input{
+    width: 70%;
+    padding: 4pt;
+    border-radius: 5pt;
+    border: 1px solid #d8d8d8;
+    font-size: 12pt;
+    height: fit-content;
+    margin-right: 20pt;
+}
+
+.caixa-pesquisa label, .caixa-filtro label{
+    margin-right: 10pt;
+    margin-top: 5pt;
+}
+
+.caixa-pesquisa button{
+    padding: 6pt;
+    width: 60pt;
+    border-radius: 6pt;
+    background-color: #2E2E2E;
+    color: white;
+    height: fit-content;
+    cursor: pointer;
+    border:none;
+}
+
+.caixa-filtro button{
+    padding: 6pt;
+    width: 60pt;
+    border-radius: 6pt;
+    background-color: rgb(27, 173, 112);
+    color: white;
+    height: fit-content;
+    cursor: pointer;
+    border:none;
+}
+
+.caixa-filtro select{
+    width: 70%;
+    padding: 4pt;
+    border-radius: 5pt;
+    border: 1px solid #d8d8d8;
+    font-size: 12pt;
+    height: fit-content;
+    margin-right: 20pt;
+  
+}
+
+
+.listaProdutos h2{
+    margin-bottom: 20pt;
+}
+
+.texto-categorias{
+    color: #84CE26;
+}
+
+.grelha-produtos{
+    height: fit-content;
+    margin-bottom: 40pt;
+}
+
+.header,  .linha-produto{
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 30%;
+    column-gap: 10pt;
+    align-items: center;
+
+}
+
+.header{
+    margin-bottom: 20pt;
+    padding-bottom: 4pt;
+    border-bottom:  1px solid #d8d8d8;
+    font-size: 8pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.linha-produto{
+    font-size: 10pt;
+    padding: 2pt;
+}
+
+.opcoes a:hover{
+    cursor: pointer;
+}
+
+
+.linha-produto:hover{
+    background-color: #c9c9c959;
+}
+
+.linha-produto img{
+    height: 80%;
+}
+
+
+.imagemProduto img{
+    width: 20%;
+}
+/*************  FormulĆ�rio de inserĆ§ao de produtos ******************/
+
+.formproduto{
+    padding-top: 80pt;
+}
+
+.formproduto h1, .formcategoria h1{
+    margin-bottom: 20pt;
+}
+
+.formproduto input,
+.formproduto select, 
+.formcategoria input{
+    padding: 4pt;
+    border-radius: 5pt;
+    border: 1px solid #d8d8d8;
+    font-size: 12pt;
+    height: fit-content;
+    margin-right: 20pt;
+    width: 70%;
+}
+
+.control-label{
+    color:#424242;
+}
+
+.form-group{
+    padding-bottom: 10pt;
+}
+
+
+.invisivel{
+   visibility: hidden;
+   transition: all 0.5s;
+}
+
+.visivel{
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.sucesso{
+    background-color: #84CE26;
+    transition: all 0.5s;
+}
+
+.erro{
+    background-color: #ac1010;
+    transition: all 0.5s;
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    border-radius: 6pt;
+    color: white;
+    height: 30pt;
+    position: relative;
+    padding-right: 10pt;
+    padding-top: 10pt;
+    margin-bottom: 10pt;
+    transition: all 0.5s;
+}
+
+
+.mensagem h4{
+    margin-left: 10pt;
+}
+
+
+.close{
+   font-size: 1.2rem;
+}
+
+.close:hover{
+    cursor: pointer;
+    color: #ce6926;
+}
+
+.eliminarproduto{
+    padding-top: 80pt;
+}
+
+.detalhe_action button{
+    width: fit-content;
+}
+
+.detalhe_action button#cancelar{
+    background-color: rgb(214, 162, 20);
+    color:white;
+}
+
+button#cancelar:hover{
+    background: none;
+    color:#84CE26;
+    border: 1px solid rgb(223, 160, 24);;
+}
+
+.formcategoria{
+    padding-top: 80pt;;
+}
+
+.formcategoria input[type="submit"]{
+    padding: 6pt;
+    width: fit-content;
+    border-radius: 6pt;
+    background-color: #2E2E2E;
+    color: white;
+    height: fit-content;
+    cursor: pointer
+}
+
+.form-group img {
+    width: 40%;
+}
+
+.mostrar_escolher_imagem{
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    padding: 6pt;
+    width: fit-content;
+    border-radius: 6pt;
+    background-color: rgb(54, 196, 177);
+    color: white;
+    height: fit-content;
+    cursor: pointer
+}
+
+.dadosformulario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 30pt;
+}
+
+.loginadmin{
+    padding-top: 80pt;
+    display:flex;
+    justify-content: center;
+}
+
+.loginadmin h1{
+    margin-bottom: 30pt;
+}

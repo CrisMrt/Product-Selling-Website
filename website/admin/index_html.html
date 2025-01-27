@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titulo</title>
+    <link rel="stylesheet" href="admin-style.css"  />
+</head>
+<body>
+    <header>
+        <div class="top">
+            <nav class = "container">
+                <div class="logo">
+                   Admin
+                </div>
+                <div class="menu">
+    <ul>
+        <li><a href="index.html">Produtos</a></li>
+        <li><a href="../index.php">Loja</a></li>
+        <li class="user">
+        António |<a href='logout.php' class='login'>logout</a>       
+      </ul>
+</div>          
+</nav>
+        </div>
+        
+    </header>
+    <div class="container">
+        <main role="main">
+            <div class="novo-produto">
+                <a href="admin-inserirproduto.html"><button class="btnovo">Novo produto</button></a>
+            </div>
+            <div class="pesquisa">
+                <form name="pesquisa" action="index.php" method="post">
+                    <div class="grelha-pesquisa">
+                        <div class="caixa-pesquisa">
+                            <label for="pesquisa">Pesquisa</label>
+                            <input type="text" name="pesquisa" id="pesquisa"/>
+                            <button type="submit">OK</button>
+                        </div>
+                        <div class="caixa-filtro">
+                             <label for="filtro">Categoria</label>
+                             <select name="filtro" id="filtro">
+                                <option value="7">brinquedos</option>
+                                    <option value="5">casas</option>
+                                    <option value="6">jogadores</option>
+                                    <option value="4">Outros</option>
+                                    <option value="1">Paineis</option>
+                                    <option value="3">patins</option>
+                                    <option value="2">Porta-Chaves</option>
+                                 </select>
+                             <a href="admin-inserirCategoria.php"><button type="button">Nova</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="listaProdutos">
+                 
+                <div id="mensagem" class="mensagem invisivel">
+                    <h4></h4>
+                    <div class="close" onclick="CloseMessage();">X</div>
+                </div> 
+                                                <h2>Listagem de produtos  <span class="texto-categorias"></span></h2>
+                <div class="grelha-produtos">
+                    <div class="header">
+                          <div>id</div>
+                          <div>Foto</div>
+                          <div>Nome</div>
+                          <div>Preço</div>
+                          <div>Opções</div>
+                    </div>
+                    <div class="dados">
+                                              <!--//inicio de ciclo -->
+                        <div class="linha-produto">
+                            <div>25</div>
+                            <div class="imagemProduto"><img src="../images/joaoCosta.png"></div>
+                            <div>teste</div>
+                            <div>1</div>
+                            <div class="opcoes">
+                              <a href="editaproduto.php?id=25"><img src="images/edit.png"></a>
+                              <a href="eliminaproduto.php?id=25"><img src="images/close.png"></a>
+                           </div>
+                        </div>
+                                               <!--//inicio de ciclo -->
+                        <div class="linha-produto">
+                            <div>21</div>
+                            <div class="imagemProduto"><img src="../images/inseption2.png"></div>
+                            <div>qweq</div>
+                            <div>23</div>
+                            <div class="opcoes">
+                              <a href="editaproduto.php?id=21"><img src="images/edit.png"></a>
+                              <a href="eliminaproduto.php?id=21"><img src="images/close.png"></a>
+                           </div>
+                        </div>
+                                               <!--//inicio de ciclo -->
+                        <div class="linha-produto">
+                            <div>6</div>
+                            <div class="imagemProduto"><img src="../images/baja3.jpg"></div>
+                            <div>teste</div>
+                            <div>10</div>
+                            <div class="opcoes">
+                              <a href="editaproduto.php?id=6"><img src="images/edit.png"></a>
+                              <a href="eliminaproduto.php?id=6"><img src="images/close.png"></a>
+                           </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+<footer>
+       <p>Escola Gago Coutinho 2024</p>
+</footer>
+<script src="scripts/scripts.js"></script>
+</body>
+</html> 
